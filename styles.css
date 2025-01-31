@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0e6f6;
+    background-color: #f8c8d1; /* Pastel Pink color */
     text-align: center;
     padding: 50px;
 }
@@ -8,6 +8,17 @@ body {
 .container {
     max-width: 600px;
     margin: 0 auto;
+}
+
+/* Envelope image styling */
+.envelope {
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Smooth animation for opening effect */
+}
+
+.envelope:hover {
+    transform: scale(1.1); /* Make the envelope slightly bigger when hovered */
 }
 
 h1 {
@@ -48,5 +59,11 @@ textarea {
 #response {
     font-size: 1.5em;
     color: #28a745;
+    margin-top: 20px;
+}
+
+/* Sad animal image styling */
+#sadAnimal {
+    width: 200px;
     margin-top: 20px;
 }
