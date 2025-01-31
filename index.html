@@ -9,17 +9,26 @@
 <body>
 
     <div class="container">
-        <h1>Hey <span id="girlfriendName">Iman Smith</span>,</h1>
-        <p>I've been thinking about something important...</p>
-        <p>Will you be my Valentine?</p>
+        <!-- Envelope image that will be clicked to reveal the question -->
+        <img id="envelope" src="https://example.com/envelope.png" alt="Envelope" class="envelope" onclick="openEnvelope()">
 
-        <button class="button" onclick="answer('yes')">Yes</button>
-        <button class="button" onclick="answer('no')">No</button>
+        <!-- Hidden content (question and buttons) that will appear after clicking the envelope -->
+        <div id="questionContainer" style="display: none;">
+            <h1>Hey <span id="girlfriendName">Imani Smith</span>,</h1>
+            <p>I've been thinking about something important...</p>
+            <p>Will you be my Valentine?</p>
 
-        <div id="reasonContainer" style="display: none;">
-            <p>Oh no! 😢 Why are you saying no?</p>
-            <textarea id="reasonText" placeholder="Please tell me why..." rows="4" cols="50"></textarea><br>
-            <button onclick="submitReason()">Submit</button>
+            <button class="button" onclick="answer('yes')">Yes</button>
+            <button class="button" onclick="answer('no')">No</button>
+
+            <div id="reasonContainer" style="display: none;">
+                <p>Oh no! 😢 Why are you saying no?</p>
+                <textarea id="reasonText" placeholder="Please tell me why..." rows="4" cols="50"></textarea><br>
+                <button onclick="submitReason()">Submit</button>
+            </div>
+
+            <!-- Sad animal image -->
+            <img id="sadAnimal" src="" alt="Sad animal" style="display: none; width: 200px; margin-top: 20px;" />
         </div>
 
         <div id="response" style="display: none;">
