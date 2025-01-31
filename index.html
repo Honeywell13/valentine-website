@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hey <span id="girlfriendName">Iman Smith</span>,</h1>
+        <p>I've been thinking about something important...</p>
+        <p>Will you be my Valentine?</p>
+
+        <button class="button" onclick="answer('yes')">Yes</button>
+        <button class="button" onclick="answer('no')">No</button>
+
+        <div id="reasonContainer" style="display: none;">
+            <p>Oh no! 😢 Why are you saying no?</p>
+            <textarea id="reasonText" placeholder="Please tell me why..." rows="4" cols="50"></textarea><br>
+            <button onclick="submitReason()">Submit</button>
+        </div>
+
+        <div id="response" style="display: none;">
+            <p>Thank you for your response! 💖</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
